@@ -39,11 +39,11 @@ function Home({match,history}){
     }
     
     $(document).ready(function () {
-        $("#myBtn").css("display", "auto");
+       // $("#myBtn").css("display", "auto");
       $("div").scroll(function() {
-          if($(this).scrollTop() == 0 || $(this).scrollTop() <= 100 ){
+          if($(this).scrollTop() == 0 ){
             $("#myBtn").css("display", "none");
-          } else if($(this).scrollTop() >= 0 ){
+          } else if($(this).scrollTop() > 0 ){
             $("#myBtn").css("display", "block");
           }
         });

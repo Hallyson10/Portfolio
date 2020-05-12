@@ -20,7 +20,7 @@
     max-width: 90%;
     margin : 0 auto;
     height: 159px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 #div-horizontal-small{
     display: flex;
@@ -172,7 +172,7 @@
         max-width: 90%;
         margin : 0 auto;
         height: 338px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     #div-horizontal-small{
         display: flex;
