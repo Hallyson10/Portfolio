@@ -1,0 +1,121 @@
+
+#drawer-dash::-webkit-scrollbar{
+    width: 0;
+}
+#drawer-dash{
+    height: 100%;
+    max-height: 100vh;
+    width: 208px;
+    max-width: 80%;
+    min-width: 208px;
+    background: #272425;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    overflow: auto;
+}
+#dash-global-pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#dash-logo{
+    height: 136px;
+    max-height: 90%;
+    border-bottom: 1px solid #595255;
+    border-width: 2px;
+    width: 80%;
+    max-width: 80%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#dash-bottom{
+    height: 210px;
+    max-height: 210px;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 30px;
+    
+}
+#line-dash{
+    width: 80%;
+    border-top: 1px solid #595255;
+    border-width: 2px;
+    margin : 0 auto;
+    margin-bottom: 20px;
+   
+}
+#dash-bottom h4{
+    font-family: Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 6px;
+    color : #BFC7D5;
+    margin-left: 22px;
+}
+#dash-bottom-logout{
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+#dash-bottom-logout ul{
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+#dash-logo img{
+    height: 58px;
+    width: 46px;
+    margin-bottom: 8px;
+}
+#dash-logo h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial;
+    color : #BFC7D5;
+    margin: 2px;
+}
+#dash-logo h6{
+    font-size: 12px;
+    color : #BFC7D5;
+    font-family: Arial;
+    font-weight: 400;
+    
+}
+
+#dash-option-pai{
+    height: 200px;
+    display: flex;
+    max-height: 200px;
+    align-items: center;
+    justify-content: center;
+    min-width: 208px;
+}
+
+#dash-option{
+    height: 180px;
+    max-height: 180px;
+    width: 100%;
+    padding-top: 8px;
+    
+}
+#dash-option h4{
+    font-family: Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color : #BFC7D5;
+    margin-bottom: 20px;
+    margin-left: 22px;
+}

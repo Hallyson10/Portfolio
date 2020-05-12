@@ -1,0 +1,343 @@
+#centro {
+    width: 100%;
+    max-height: 100%;
+    image-orientation: from-image;
+}
+.sub-topo {
+    position:absolute;
+    height: 200px;
+    width: 76%;
+}
+
+#name-description{
+  font-family: 'Kawak',Regular 400;
+  font-size: 16px;
+  padding-left: 20px;
+  font-weight: 500;
+
+}
+
+#mae{
+  min-width: 100%;
+  border-width: 0px;
+  display: flex;
+  min-height: 100px;
+  height: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 38px;
+  padding-right: 80px;
+  background: #f2f2f2;
+  align-items: center;
+}
+  
+  #teste{
+    min-width: 100%;
+    min-height: 110px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: center;
+  }
+  
+  #elemento1{
+    width: 320px;
+    min-height: 50px;
+    max-width: 320px;
+  }
+  
+  #elemento2{
+    width: 140px;
+    display: flex;
+    min-height: 50px;
+    justify-content: flex-end;
+  }
+  #rs {
+      margin:1px;
+  }
+  #img-rs{
+    height: 18px;
+    width: 18px;
+    margin-right: 4px;
+    cursor: pointer;
+
+  }
+  #footer {
+      height: 48px;
+      margin-top: -22px;
+  }
+  #descricao-home {
+    margin : 0 auto;
+    padding-top: 20px;
+    width: 82%;
+    height: 150px;
+    max-height: 80%;
+    margin-bottom: 10px;
+  }
+
+#sub-descricao {
+  display: flex;
+  max-height: 120px;
+  justify-content: space-between;
+  height: 124px;
+}
+#sub-sub-descricao h2{
+  font-size: 22px;
+}
+#sub-sub-descricao h4{
+  color: #939496;
+  margin-top: -16px;
+  margin-bottom: 20px;
+}
+#sub-sub-descricao {
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 14px;
+}
+#icons-contacts-lateral {
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+}
+#buttons-ativa{
+  outline: none;
+  outline-style: none;
+  border: none;
+  background: none;
+  margin-top: 12px;
+}
+
+/*tamanho mobile*/
+@media screen and (max-width: 600px){
+  #descricao-home {
+    margin : 0 auto;
+    padding-top: 20px;
+    width: 82%;
+    height: 110px;
+    max-height: 80%;
+    margin-bottom: 10px;
+  }
+    #topo_logo{
+        object-fit: scale-down;
+        width: 100%;
+        }
+    #sub-sub-descricao h2{
+        font-size: 14px;
+        font-family: Kawak Extra-bold 800;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #sub-sub-descricao h4{
+      font-family: Kawak Extra-bold 800;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: -0.03em;
+    }
+    #sub-descricao{
+      height: 80px;
+    }
+    #sub-sub-descricao{
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      width: 130px;
+    }
+    #sub2-sub2-descricao{
+      display: flex;
+      height: 80px;
+      width: 140px;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+    #images{
+      image-orientation: from-image;
+      object-fit: cover;
+      margin : 0 auto;
+      width:86%;
+      height: 228.11px;
+      max-width: 100%;
+      max-height: 100%;
+      margin-bottom: 10px;
+      border-radius: 8px;
+       }
+
+    #list-images-projetos{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      background: #f2f2f2;
+      border-width: 0px;
+      margin : 0 auto;
+      max-width: 100%;
+  }
+  #list-images-projetos li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      background: #f2f2f2;
+      border-width: 0px;
+  }
+  #list-images-projetos ul li{
+    display : flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  #mae{
+    min-width: 100%;
+    border-width: 0px;
+    display: flex;
+    min-height: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #teste{
+    min-width: 80%;
+    width: 80%;
+    min-height: 220px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: center;
+  }
+  #elemento1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #elemento2{
+   display: none;
+  }
+  
+  #footer{
+    height: 150px;
+    width: 160px;
+  }
+
+    /*list projetos*/
+    
+
+
+
+
+}
+/*tamanho desktop*/
+@media screen and (min-width: 900px) {
+  #mae{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+  }
+  #list-images-projetos{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    width: 81%;
+    margin : 0 auto;
+    margin-top: 30px;
+    min-height: 90%;
+  }
+  #list-images-projetos h3{
+      text-align: start;
+      color:#939496;
+      margin-bottom: 24px;
+  }
+  #list-images-projetos li{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    grid-gap: 10px;
+  }
+  #list-images-projetos li img{
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #descricao-home {
+    margin : 0 auto;
+    padding-top: 20px;
+    width: 82%;
+    height: 120px;
+    max-height: 80%;
+    margin-bottom: 10px;
+  }
+  #topo_logo{
+      width: 100%;
+  }
+  
+}
+/*tamanho tablet*/
+@media screen and (min-width: 600px) and (max-width: 900px){
+ 
+  #topo_logo {
+      width: 100%;
+      background: #f87
+  }
+  #list-images-projetos{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    width: 81%;
+    margin : 0 auto;
+    margin-top: 30px;
+    min-height: 90%;
+  }
+  #list-images-projetos li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    grid-gap: 10px;
+  }
+  #list-images-projetos li img{
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #mae{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+  }
+  #descricao-home {
+    margin : 0 auto;
+    padding-top: 20px;
+    width: 82%;
+    height: 110px;
+    max-height: 80%;
+    margin-bottom: 10px;
+  }
+  
+}
+
+#button-ativa-des{
+  height: 28px;
+  width: 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}

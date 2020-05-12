@@ -1,0 +1,190 @@
+
+.home-container::-webkit-scrollbar{
+    width: 0;
+}
+iframe#home-container::-webkit-scrollbar { 
+	display: none;
+}
+.home-container {
+    background-color: #f2f2f2;
+    height: 100%;
+    
+}
+
+/*tamanho mobile*/
+@media screen and (max-width: 600px){
+    #myBtn {
+        display: none;
+        margin: 0 auto;
+        opacity: 80%;
+        left: 43%;
+        bottom: 30%;
+        cursor: pointer;
+        position: fixed;
+        z-index: 3;
+    }
+    .home-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-container ul li {
+        display : flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    #descricao-home-option-container{
+         display: flex;
+         max-width: 100%;
+         flex-direction: column;
+         height: 100px;
+         justify-content: center;
+         align-items: center;
+     }
+     #descricao-home-option {
+        height: 100px;
+        display: flex;
+        width: 82%;
+        padding-left: -28px;
+        padding-left: 8px;
+    }
+    #descricao-home-option h6{
+        font-family: Kawak Extra-bold 800;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #939496;
+        text-align: justify;
+
+    }
+    #sub-button{
+        display: none;
+    }
+}
+
+/*tamanho desktop*/
+@media screen and (min-width: 900px) {
+    #myBtn {
+        display: none;
+        margin: 0 auto;
+        opacity: 80%;
+        left: 50%;
+        bottom: 30%;
+        cursor: pointer;
+        position: fixed;
+        z-index: 3;
+        height:44px;
+        width:44px;
+    }
+    .home-container {
+        background-color: #f2f2f2;
+        height: 100vh;
+        overflow: auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #descricao-home-option-container{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    #descricao-home-option {
+        height: 100px;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    #descricao-home-option h6{
+        font-family: Kawak Extra-bold 800;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        color: #939496;
+        text-align: justify;
+    }
+    #sub-button{
+        display: flex;
+        align-self: flex-start;
+        padding-left: 130px;
+    }
+        
+}
+/*tamanho tablet*/
+@media screen and (min-width: 600px) and (max-width: 900px){
+    #myBtn {
+        display: none;
+        margin: 0 auto;
+        opacity: 80%;
+        left: 47.6%;
+        right: 50%;
+        bottom: 30%;
+        cursor: pointer;
+        position: fixed;
+        z-index: 3;
+        height:42px;
+        width:42px;
+    }
+    .home-container {
+        background-color: #f2f2f2;
+        height: 100vh;
+        overflow: auto;
+    }
+    #descricao-home-option-container{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    #descricao-home-option {
+        height: 100px;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    #descricao-home-option h6{
+        font-family: Kawak Extra-bold 800;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        color: #939496;
+        text-align: justify;
+    }
+    #sub-button{
+        display:none
+    }
+}
+ 
+
+
+
+
+
+.descricao-home-option-container{
+   display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+
+#buttons-ativa img{
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    outline: none;
+    outline-style: none;
+    border: none;
+    background: none;
+}

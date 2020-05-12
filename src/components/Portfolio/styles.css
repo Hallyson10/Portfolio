@@ -1,0 +1,24 @@
+#container-input{
+    height: 110px;
+    width: 400px;
+}
+#subcontainer-input-1{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#subcontainer-input-2{
+        border-radius: 10px;
+        align-items: center;
+        display: flex;
+        border-width: 0px;
+        padding:4px;
+        padding-left: 14px;  
+}
+#subcontainer-input-2::placeholder{
+    color: #939496;
+}
+#subcontainer-input-2::-webkit-scrollbar{
+    width: 0;
+}

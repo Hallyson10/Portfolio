@@ -1,0 +1,8 @@
+#container-user{
+    background-color: #F2F2F2;
+    height: 100%;
+    overflow : auto;
+    margin-left: 208px;
+    min-height: 100%;
+    flex-direction: column;
+}

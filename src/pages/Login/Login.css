@@ -1,0 +1,183 @@
+
+*{
+    margin : 0;
+    padding : 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.login-container {
+    top:0;
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    height: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../assets/Ornament.png);
+    background-position: top;
+    mix-blend-mode: normal;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+}
+.login-container h3{
+    cursor: pointer;
+}
+@media(min-width:1170px){
+    .login-container{
+        max-width: 100%;
+        padding: 0;
+    }
+    .login-container form{
+        max-width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width : 640px) {
+    form{
+    
+    }
+} 
+.login-container form{
+    margin-top: 30px;
+    max-width: 500px;
+    display: flex;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    flex-direction: column;
+    width: 577.17px;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    height: 500px;
+    min-height: 450px;
+    background: #FFF;
+    padding-bottom: 30px;
+}
+.central-form {
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    margin-top: 32px;
+}
+
+.login-container form input {
+    border: none;
+    font-family: 'Kawak',Bold 700;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.75;
+    top: 0%;
+    bottom: 0%;
+    font-size: 16px;
+    padding: 0 20px;
+    height: 32px;
+    background: #F2F4F7;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    margin-top: 10px;
+    outline: none;
+    text-shadow: none;
+    margin-bottom: 20px;
+
+}
+.login-container form input::placeholder{
+    color : #7A869A
+}
+.name-form {
+    margin-bottom: 20px;
+}
+
+.login-container form h3 {
+    font-family: 'Kawak',Bold 700;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: #000;
+}
+.login-container form h2 {
+    font-family: 'Kawak',Bold 700;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #939496;
+}
+
+.login-container form h1 {
+    font-family: 'Kawak',Extra-bold 800;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #272425;
+}
+.login-container form label {
+    font-family: 'Kawak',Bold 700;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C1C7D0;
+}
+.login-container form h4{
+    font-family: 'Kawak',Extra-bold 800;
+    width: 100%;
+    height: 28px;
+    top: 100%;
+    margin: 0;
+    float: left;
+    text-align: left;
+    margin-top: 26px;
+
+}
+.login-container form h4 {
+    align-self: flex-start;
+    padding-left: 74px;
+    width: 50%;
+    border-bottom: 2px solid #272425;
+    color:#272425;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.login-cabecalho{
+    width: 100px;
+    height: 39px;
+    left: 671px;
+    top: 283px;
+    border-bottom-width: 3px;
+    border-color: #F2F2F2;
+    align-self: center;
+
+}
+
+.login-container form button{
+    left: -0.04%;
+    right: -0.04%;
+    top: 87.3%;
+    bottom: 2.21%;
+    border : 0;
+    border-radius: 4px;
+    height: 38px;
+    font-size: 16px;
+    background-color: #272425;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    font-family: 'Kawak',Bold 700;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    cursor: pointer;
+}

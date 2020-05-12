@@ -1,0 +1,30 @@
+#button-dash-option:hover{
+    background-color: #393637;
+}
+#button-dash-option img {
+    margin-right: 20px;
+    max-width: 100px;
+}
+#button-dash-option h6{
+    color : #979797
+}
+#body-home::-webkit-scrollbar{
+    width: 0;
+}
+
+#button-dash-option{
+   height: 34px;
+   display: flex;
+   padding-left: 22px;
+   margin-bottom: 4px;
+   cursor: pointer;
+}
+#button-dash-option-ativo{
+    height: 34px;
+    display: flex;
+    padding-left: 22px;
+    margin-bottom: 4px;
+    cursor: pointer;  
+    background-color: #393637;
+    max-width: 100%;
+ }
