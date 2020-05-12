@@ -16,12 +16,12 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
-        opacity: 80%;
+        opacity : 80%;
+        z-index: 999;
         left: 43%;
         bottom: 30%;
         cursor: pointer;
         position: fixed;
-        z-index: 3;
     }
     .home-container {
         display: flex;
@@ -67,12 +67,12 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
-        opacity: 80%;
+        opacity : 80%;
+        z-index: 999;
         left: 50%;
         bottom: 30%;
         cursor: pointer;
         position: fixed;
-        z-index: 3;
         height:44px;
         width:44px;
     }
@@ -120,12 +120,13 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
+        opacity : 80%;
+        z-index: 999;
         left: 47.6%;
         right: 50%;
         bottom: 30%;
         cursor: pointer;
         position: fixed;
-        z-index: 3;
         height:42px;
         width:42px;
     }
