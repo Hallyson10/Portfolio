@@ -16,7 +16,6 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
-        opacity : 80%;
         z-index: 999;
         left: 43%;
         bottom: 30%;
@@ -119,7 +118,6 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
-        opacity : 80%;
         z-index: 999;
         left: 47.6%;
         right: 50%;
