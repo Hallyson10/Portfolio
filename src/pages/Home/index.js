@@ -54,7 +54,7 @@ function Home({match,history}){
 
     return (
         <div className="home-container">
-            <img id='myBtn' src={ButtonSubir} alt='buttonSubir'/>
+            <img id='myBtn' src={ButtonSubir} alt='button'/>
         <TopoLogo/>
         <SubTopoLogo
             descricaoAtiva={descricaoAtiva}

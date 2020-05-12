@@ -67,7 +67,6 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
-        opacity : 80%;
         z-index: 9999;
         left: 50%;
         bottom: 30%;
