@@ -120,7 +120,6 @@ iframe#home-container::-webkit-scrollbar {
     #myBtn {
         display: none;
         margin: 0 auto;
-        opacity: 80%;
         left: 47.6%;
         right: 50%;
         bottom: 30%;
