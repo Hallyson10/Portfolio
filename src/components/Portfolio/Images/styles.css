@@ -9,9 +9,19 @@
     max-width: 300px;
 }
 #label-add-image{
-    font-size: 20px;
-    margin-bottom: 20px;
+    
+    height: 55px;
+    left: 19.53%;
+    right: 48.18%;
+    top: calc(50% - 55px/2 - 164px);
+    font-family: Kawak Extra-bold 800;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1.2px;
     color: #393637;
+    min-width: 400px;
 }
 #subcontainer-images{
     min-width: 400px;
@@ -73,5 +83,5 @@
     background-repeat: no-repeat;
 }
 #div-images-container{
-    margin-top: 10px;
+    margin-top: 20px;
 }

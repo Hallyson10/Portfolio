@@ -1,0 +1,69 @@
+#component-postagem-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        
+}
+#title-postagem-option h6{
+    font-family: Kawak Extra-bold 800;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-overflow:clip ellipsis;
+    overflow: hidden;     
+}
+#title-postagem-option{
+    width: 478px;
+    min-height: 44px;
+    left: 375px;
+    left: 375px;
+    right: 1067px;
+    top: calc(50% - 44px/2 - 843.5px);
+    top: 279px;
+    background: #D4D3D4;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-overflow : "…" "…";
+    font-family: Kawak Extra-bold 800;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#container-button-postagem{
+    width: 478px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#button-option-postagem{
+    min-width: 138px;
+    height: 44px;
+    left: 182px;
+    right: -182px;
+    top: calc(50% - 44px/2 + 0.5px);
+    background: #272425;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    color:#fff
+}
+#button-option-postagem-excluir{
+    min-width: 138px;
+    height: 44px;
+    left: 182px;
+    right: -182px;
+    top: calc(50% - 44px/2 + 0.5px);
+    background: #E64141;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    color:#fff
+}

@@ -1,26 +1,34 @@
 import React from 'react';
-
-import './styles.css'
+import './styles.css';
+import { Button } from 'react-bootstrap';
 function Input(props) {
   return (
     <div id='container-input-user'>
-    <div id='subcontainer-input-1user'>
-    <label style={{color:'#939496'}}>{props.title}</label>
+    <label id='title-input-user'>{props.title}</label>
+    <div>
     <input 
               maxLength={200} 
               value={props.value}
               onChange={(event)=>props.onChange(event.target.value)}
               spellCheck 
-              id='subcontainer-input-2user' 
+              type={props.type}
+              className='subcontainer-input-2user' 
               placeholder={props.placeholder} 
-              style={{resize:props.resize,
-              maxHeight:70,
-              minHeight:40,
-              color:"#939496",
-              height: props.height,
-              width: props.width}}
               />
     </div>
+    <div id='button-input-user'>
+              <Button onClick={props.onClick} 
+              style={{
+              height:28,
+              backgroundColor:'black',
+              width:100,
+              borderRadius:10,
+              borderWidth:0,
+              background:'#D4D3D4',
+              color:"#FFF"}}
+              size='sm' variant='primary' >Salvar</Button>
+            </div>
+            
     </div>
   );
 }

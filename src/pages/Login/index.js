@@ -15,14 +15,18 @@ function Login({history}){
     async function handleSubmit(e){
         e.preventDefault();
         try {
-        //     const res = await api.post('/login',{
-        //         email : email,
-        //         password : senha
-        //     })
-        //    localStorage.setItem('user_id',res.data.data.id);
-           history.replace(`/dashboard/home`);
+            const res = await api.post('/login',{
+                email : email,
+                password : senha
+            })
+            if(res.data.status){
+              localStorage.setItem('user_id',res.data.id);
+              history.replace(`/dashboard/home`);
+            }else{
+                console.log('usuário não logado')
+            }
         } catch (error){
-            alert('Senha ou e-mail incorreto!');
+            console.log(error)
         }
     }
     return (

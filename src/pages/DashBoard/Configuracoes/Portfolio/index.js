@@ -5,38 +5,56 @@ import Input from '../../../../components/Portfolio/Input'
 import ContainerImages from '../../../../components/Portfolio/Images/Container'
 import logo_bottom from '../../../../assets/logo_bottom.svg'
 import './styles.css'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css'; 
 import { salvarProjeto } from '../../../../funcoes/index'
 function Portfolio(props) {
-  const [fotoPrincipal,setFotoP] = useState(null);
+  const [imagem_principal,setFotoP] = useState(null);
   const [arrayImages,setImages] = useState([]);
   const [titulo,setTitulo] = useState('');
-  const [subTitulo,setSubTitulo] = useState('');
+  const [sub_titulo,setSubTitulo] = useState('');
   const [descricao,setDescricao] = useState('');
-  const [data,setData] = useState('');
-
+  const [data_realizacao,setData] = useState('');
+  const [salvo,setSalvo] = useState(false);
   
   const preview = useMemo(()=>{
-       return fotoPrincipal ? URL.createObjectURL(fotoPrincipal) : null;
-  },[fotoPrincipal]);
-
+       return imagem_principal ? URL.createObjectURL(imagem_principal) : null;
+  },[imagem_principal]);
+  useEffect(()=>{
+    console.log(arrayImages)
+},[arrayImages])
   function salvar(){
     const Data = {
-        imagem : fotoPrincipal,
+        imagem_principal,
         titulo,
-        subTitulo,
+        sub_titulo,
         descricao,
-        date:data,
-        prazo_conclusao : 0,
+        data_realizacao,
+        arrayImages
     }
-    salvarProjeto(Data);
+   
+    if(imagem_principal !== null && titulo !== '' && sub_titulo !== '' && descricao !== '' && arrayImages.length >= 1){
+      if(salvarProjeto(Data)){
+        setFotoP(null);
+        setImages([]);
+        setTitulo('');
+        setSubTitulo('');
+        setData('');
+        setDescricao('');
+        setSalvo(true);
+        toast.success('Parabéns! publicado com sucesso.')
+      }else{
+        toast.error('Ops! ocorreu um erro inesperado.')
+      }
+    }
   }
   return (
     <div id='container-portfolio'>
+    <ToastContainer/>
      <div id='sub-container-portfolio'>
-     <label>Atualize seus jobs!</label>
+     <label id='title-port'>Atualize seus jobs!</label>
      <FotoPrincipal 
       setFoto0={(image) => {
-      setImages([...arrayImages,image])
       setFotoP(image)}}
       preview={preview}/>
      
@@ -54,7 +72,7 @@ function Portfolio(props) {
       height={60}
       width= {400}
       resize='revert'
-      value={subTitulo}
+      value={sub_titulo}
       onChange={(text)=>setSubTitulo(text)}
       />
       <Input 
@@ -72,11 +90,26 @@ function Portfolio(props) {
       height={26}
       width= {100}
       resize='none'
-      value={data}
+      value={data_realizacao}
       onChange={(text)=>setData(text)}
       />
       <ContainerImages
-      setFoto = {(image) => setImages([...arrayImages,image])}
+      salvo={salvo}
+      setFoto = {(fotoAnterior,image) => {
+        if(image){
+          if(fotoAnterior){
+            console.log('entrou na exclusão')
+          var array = arrayImages.filter((item)=>{
+            if(item.name !== fotoAnterior.name){
+              return item.name !== fotoAnterior.name
+            }
+          })
+          setImages([...array,image])
+        }else{
+          setImages([...arrayImages,image])
+        }
+        }
+        }}
       />
     <div id='button-salvar-post'>
               <Button onClick={salvar} 

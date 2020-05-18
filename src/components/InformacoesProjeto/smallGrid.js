@@ -7,14 +7,14 @@ function InformacoesProjeto(props) {
       <div id='container-small-grid'>
         <div id='div-big-small'>
         
-          {props.trabalhos[0].imagensProjeto[1] ? 
-          <img id='image-0' src={props.trabalhos[0].imagensProjeto[1].uri}  alt='image-1'/>:null
+          {props.trabalhos[1] ? 
+          <img id='image-0' src={`http://localhost:3333/files/${props.trabalhos[1].id}`}  alt='image-1'/>:null
           }
         </div>
         <div id='div-horizontal-small'>
             <div id='p-div'>
-            {props.trabalhos[0].imagensProjeto[2] ? 
-            <img id='image1-small' src={props.trabalhos[0].imagensProjeto[2].uri}  alt='image-1'/>:null
+            {props.trabalhos[2] ? 
+            <img id='image1-small' src={`http://localhost:3333/files/${props.trabalhos[2].id}`}  alt='image-1'/>:null
             }
             </div>
             
@@ -22,7 +22,7 @@ function InformacoesProjeto(props) {
       </div>
   )
   }catch{
-    return <>{props.trabalhos}</>
+    return <></>
   }
  
 }

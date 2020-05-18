@@ -1,0 +1,33 @@
+#container-postagem{
+    background-color: #F2F2F2;
+    overflow : auto;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#sub-container-postagem label{
+    font-family: Kawak Extra-bold 800;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1.2px;
+    color: #393637;
+}
+#sub-container-postagem{
+    padding-top: 140px;
+    padding-left: 80px;
+    height: 100vh;
+    width: 50%;
+    margin-left: 208px;
+}
+#sub-container-postagem ul{
+    list-style: none;
+    margin-top: 80px
+}
+#sub-container2-postagem{
+    height: 100vh;
+    width: 50%;
+    background-color: #f03;
+}

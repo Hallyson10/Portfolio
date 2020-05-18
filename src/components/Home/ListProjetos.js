@@ -4,9 +4,12 @@ import './styles.css'
 import Imagem from '../Imagens/index'
 import {Spring} from 'react-spring/renderprops'
 
-export default function components(props) {
+function components(props) {
   return (
       <>
+      <div id='my-works-title'>
+      <label>Meus trabalhos / My works</label>
+      </div>
       <Spring
     from={{opacity:0}}
     to={{opacity:1}}
@@ -14,20 +17,19 @@ export default function components(props) {
     >{
         Props => (
             <ul style={Props} id='list-images-projetos'>
+            <li >
         {props.projetos.map((projeto)=>(
-        <li key={projeto.idProjeto}>
-            {
-                projeto.imagensProjeto.map((item)=>(
-                    <img key={item.ref} onClick={()=>props.history.push('/trabalho/id')} id='images' src={item.uri} />
-                ))
-            }
+            <img key={projeto.id} onClick={()=>props.history.push(`/trabalho/${projeto.id}`)} 
+            id='images' 
+            src={`http://localhost:3333/files/${projeto.imagem_principal}`} />
+        ))}
         </li>
-    ))}
-    </ul>
-        )
-    }
+        </ul>
+      )
+        }
     
     </Spring>
     </>
   );
 }
+export default React.memo(components);

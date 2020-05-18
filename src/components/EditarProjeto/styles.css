@@ -1,0 +1,47 @@
+#container-editar-projeto{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+}
+#sub-container-editar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sub-container-editar-projeto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#image-principal-editar{
+    height: 200px;
+    width: 400px;
+    min-width: 400px;
+    min-height: 200px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+}
+#sub-container-image-editar{
+    background-size: cover;
+    cursor: pointer;
+    height: 220px;
+    width: 100%;
+    background: #979797;
+    display: flex;
+    border-radius: 8px;
+}
+#image-principal-editar img{
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+        max-height: 220px;
+        display: flex;
+        border-radius: 10px;
+        object-fit: fill;
+        cursor: pointer;
+}
+#image-principal-editar input{
+    display: none;
+    background-repeat: no-repeat;
+}

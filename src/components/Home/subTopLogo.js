@@ -7,6 +7,7 @@ import instagram from '../../assets/ig_mobile.svg'
 import facebook from '../../assets/fb_mobile.svg'
 import whatsapp from '../../assets/whats_mobile.svg'
 import menos from '../../assets/mais.svg'
+import title from '../../assets/titleBio.svg'
 import mais from '../../assets/menos.svg'
 export default function components(props) {
   return (
@@ -14,8 +15,7 @@ export default function components(props) {
             <div id='sub-descricao'>
                 <div id='sub-sub-descricao'>
                     <div>
-                    <h2>Design Gráfico</h2>
-                    <h4>Graphic Designer</h4>
+                    <img id='title-img' src={title} alt='title' />
                     </div>
                 <div>
                     <button 
@@ -29,7 +29,7 @@ export default function components(props) {
                    <Icon src={behance} alt={`/${behance}`}/>
                    <Icon src={instagram} alt={`/${instagram}`}/>
                    <Icon src={facebook} alt={`/${facebook}`}/>
-                   <Icon src={whatsapp} alt={`/${whatsapp}`}/>
+                   <Icon src={whatsapp} alt={`/${whatsapp}`} href={`http://api.whatsapp.com/send?1=pt_BR&phone=${88992046291}`} />
                 </div>
                 
             </div>

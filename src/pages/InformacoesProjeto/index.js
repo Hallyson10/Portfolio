@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import imageTopoTrabalho from '../../assets/topoImageTrabalho.svg'
 import image_topo_mobile from '../../assets/topo_trabalho_mobile.svg'
 import RollGrid from '../../components/InformacoesProjeto/index'
@@ -11,24 +11,22 @@ import imaget4 from '../../assets/imaget4.jpg'
 import ButtonSubir from '../../assets/buttonSubir.svg'
 import buttonVoltar from '../../assets/voltar.svg'
 import $ from 'jquery';
+import { getProjeto } from '../../funcoes/index'
 
 import './styles.css'
 const InformacoesProjeto = ({match,history}) => {
-    console.log(match);
-    const [trabalhos,setProjetos] = useState([
-        {imagensProjeto : [
-        {uri:imaget1,ref:'0'},
-        {uri:imaget2,ref:'1'},
-        {uri:imaget3,ref:'1'},
-        {uri:imaget2,ref:'1'},
-        {uri:imaget4,ref:'1'},
-        {uri:imaget2,ref:'1'},
-        {uri:imaget4,ref:'2'},{uri:imaget3,ref:'10'}],
-        descricao:'Projeto desenvolvido em comemoração a pascoa',
-        titulo:'',
-        idProjeto:1,
-        dataRealização:0}
-    ])
+    const [trabalhos,setProjetos] = useState([])
+    const [informacoes,setInfor] = useState({});
+    useEffect(()=>{
+        async function buscaFotos(){
+          const projeto = await getProjeto(match.params.id);
+          setProjetos(projeto.images);
+          setInfor(projeto.projeto)
+        }
+        buscaFotos();
+    },[]);
+
+
     $(document).ready(function () {
       $("#myBtn2").css("display", "auto");
     $("div").scroll(function() {
@@ -36,22 +34,22 @@ const InformacoesProjeto = ({match,history}) => {
         } else if($(this).scrollTop() >= 0 ){
         }
       });
-    $("#myBtn2").click(function() {
-        $("html, div").animate({scrollTop: 0}, 800);
-       });
     });
+    function subir(){
+      $("html, div").animate({scrollTop: 0}, 800);
+    }
   return (
   <div id='container-trabalho'>
-   <img id='myBtn2' src={ButtonSubir} alt='buttonSubir'/>
+   <img id='myBtn2' onClick={subir} src={ButtonSubir} alt='buttonSubir'/>
    <img onClick={()=>history.goBack()} id='myBtnV' src={buttonVoltar} alt='voltar' />
       <TopoLogo/>
         <img id='image-topo-trabalho' src={imageTopoTrabalho} alt='image-topo' />
         <img id='image_topo_trab_mobile' src={image_topo_mobile} alt='image-top-mob'/>
-    <Title/>
-    <RollGrid trabalhos={trabalhos} size={trabalhos[0].imagensProjeto.length}/>
+    <Title informacoes={informacoes} />
+    <RollGrid trabalhos={trabalhos} size={trabalhos.length}/>
     
   </div>
   )
 }
 
-export default InformacoesProjeto;
+export default React.memo(InformacoesProjeto);

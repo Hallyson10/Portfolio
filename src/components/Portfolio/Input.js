@@ -14,6 +14,7 @@ function Input(props) {
               spellCheck 
               id='subcontainer-input-2' 
               placeholder={props.placeholder} 
+              onBlur={props.onBlur}
               style={{resize:props.resize,
               maxHeight:70,
               minHeight:40,
