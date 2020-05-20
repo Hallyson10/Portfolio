@@ -19,9 +19,8 @@ function components(props) {
             <ul style={Props} id='list-images-projetos'>
             <li >
         {props.projetos.map((projeto)=>(
-            <img key={projeto.id} onClick={()=>props.history.push(`/trabalho/${projeto.id}`)} 
-            id='images' 
-            src={projeto.imagem_principal} />
+          <img key={projeto.id} onClick={()=>props.history.push(`/trabalho/${projeto.id}`)} 
+          src={projeto.imagem_principal} />
         ))}
         </li>
         </ul>
@@ -33,3 +32,4 @@ function components(props) {
   );
 }
 export default React.memo(components);
+ 
