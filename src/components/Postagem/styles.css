@@ -59,6 +59,7 @@
     color:#fff;
     box-shadow: none;
     border: none;
+    cursor: pointer;
 }
 #button-option-postagem-excluir{
     min-width: 138px;
@@ -72,4 +73,5 @@
     color:#fff;
     box-shadow: none;
     border: none;
+    cursor: pointer;
 }

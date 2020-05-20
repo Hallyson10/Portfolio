@@ -60,6 +60,7 @@
     min-width: 200px;
     box-shadow: none;
     border: none;
+    cursor: pointer;
 }
 #button-salvar:hover{
     background:#272425
