@@ -106,7 +106,8 @@ function User(props) {
                     setOpcao('senha');
                     }}
                 />
-                
+                <div id='logo-bottom-user'>
+                </div>
             </div>
       </div>
   )

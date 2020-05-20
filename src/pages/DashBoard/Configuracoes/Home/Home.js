@@ -39,15 +39,7 @@ export default function Home(props){
               />
             </div>
             <div id='button-salvar-bibliografia'>
-              <Button onClick={saveBibliografia} 
-              style={{
-              height:28,
-              width:100,
-              borderRadius:10,
-              borderWidth:0,
-              background:'#D4D3D4',
-              color:"#FFF"}}
-              size='sm' variant='primary' >Salvar</Button>
+            <button id='button-salvar' onClick={saveBibliografia}>Salvar</button>
             </div>
           </div>
           <div id='body-area2'>

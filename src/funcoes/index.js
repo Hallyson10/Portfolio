@@ -1,7 +1,6 @@
 import api from '../service'
 export function Logout(){
     localStorage.removeItem('user_id');
-    console.log('saiu!')
 }
 
 async function saveImages(projeto_id,imagem){
@@ -28,27 +27,22 @@ export async function salvarProjeto(data){
         
         return true;
     } catch (error) {
-        console.log(error)
         return false;
     }
 }
 export async function getProjetos(page = 1){
     try {
-        const projetos = await api.get(`/pojeros?${page}`);
-        console.log(projetos)
-        //const projetos = await api.get(`/projetos?page=${page}`);
-        // const projeto = projetos.data.projeto;
-        // const user = projetos.data.user;
-        // return {projeto,user};
+        const projetos = await api.get(`/projetos?page=${page}`);
+        const projeto = projetos.data.projeto;
+        const user = projetos.data.user;
+        return {projeto,user};
     } catch (error) {
-        console.log(error.message);
         return false;
     }
 }
 export async function getProjeto(projeto_id){
         const getProjeto = await api.get(`/projeto/${projeto_id}`);
         if(getProjeto){
-            console.log(getProjeto.data);
             return getProjeto.data;
         }
         return []
@@ -78,8 +72,6 @@ export async function editarProjeto(projeto,imagem_antiga){
                   'Content-Type': 'multipart/form-data'
                 }
             })
-            console.log(update)
-            console.log(projeto.imagem_principal);
             return true;
         } catch (error) {
             console.log(error)

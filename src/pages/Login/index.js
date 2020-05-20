@@ -2,12 +2,13 @@ import React,{useState,useEffect} from 'react'
 import './Login.css'
 import api from '../../service'
 import {isAuth,logout} from './auth'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css'; 
 function Login({history}){
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     
     useEffect(()=> {
-        console.log('verificando se existe usuário logado, na tela login...')
         if(isAuth()){
             history.replace(`/dashboard/home`);}
     },[])
@@ -23,14 +24,15 @@ function Login({history}){
               localStorage.setItem('user_id',res.data.id);
               history.replace(`/dashboard/home`);
             }else{
-                console.log('usuário não logado')
+                toast.error('senha ou e-mail incorretos!')
             }
         } catch (error){
-            console.log(error)
+            toast.error('senha ou e-mail incorretos!')
         }
     }
     return (
         <div className="login-container">
+        <ToastContainer/>
              <form onSubmit={handleSubmit} >
             
              <h4 className="login-cabecalho">LOGIN</h4>

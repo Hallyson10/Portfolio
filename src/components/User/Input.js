@@ -17,16 +17,7 @@ function Input(props) {
               />
     </div>
     <div id='button-input-user'>
-              <Button onClick={props.onClick} 
-              style={{
-              height:28,
-              backgroundColor:'black',
-              width:100,
-              borderRadius:10,
-              borderWidth:0,
-              background:'#D4D3D4',
-              color:"#FFF"}}
-              size='sm' variant='primary' >Salvar</Button>
+    <button id='button-salvar' onClick={props.onClick}>Salvar</button>
             </div>
             
     </div>

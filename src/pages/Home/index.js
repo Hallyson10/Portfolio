@@ -20,7 +20,6 @@ function Home({match,history}){
         async function loadPosts(){
             const projeto = await getProjetos();
             if(projeto){
-                console.log('imprimindo os projetos',projeto);
                 setProjetos(projeto.projeto);
                 setUser(projeto.user);
             }

@@ -56,7 +56,7 @@ function EditarProjeto(props) {
         value={projeto.descricao}
         title='Textinho interessante'
       />
-      <button onClick={updateProjeto}>Salvar</button>
+      <button id='button-salvar' onClick={updateProjeto}>Salvar</button>
       <div>
       
       </div>

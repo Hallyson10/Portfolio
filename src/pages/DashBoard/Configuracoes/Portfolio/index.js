@@ -112,16 +112,7 @@ function Portfolio(props) {
         }}
       />
     <div id='button-salvar-post'>
-              <Button onClick={salvar} 
-              style={{
-              height:28,
-              width:100,
-              borderRadius:10,
-              borderWidth:0,
-              background:'#D4D3D4',
-              color:"#FFF"}}
-              size='sm' variant='primary'
-              >Salvar</Button>
+    <button id='button-salvar' onClick={salvar}>Atualizar</button>
             </div>
       <div id='bottom-portfolio'>
                   <img src={logo_bottom} alt='logo_bottom' />
