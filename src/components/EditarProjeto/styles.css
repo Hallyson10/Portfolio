@@ -58,6 +58,8 @@
     border-radius: 10px;
     color : #fff;
     min-width: 200px;
+    box-shadow: none;
+    border: none;
 }
 #button-salvar:hover{
     background:#272425

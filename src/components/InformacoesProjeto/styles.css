@@ -341,8 +341,8 @@
         flex-direction: row;
         align-items: center;
         margin : 0 auto;
-        height: 433px;
-        max-height: 433px;
+        height: 520px;
+        max-height: 520px;
         min-width: 65%;
         max-width: 65%;
         margin-top: 20px;
@@ -402,7 +402,7 @@
     }
     #one-line-roll{
         width: 1170px;
-        height: 410px;
+        height: 520px;
         left: 375px;
         top: 1229px;
         border-radius: 5px;
@@ -412,10 +412,10 @@
         width: 68%;
         max-width: 65%;
         min-width: 65%;
-        height: 433px;
+        height: 520px;
         object-position: bottom right;
-        min-height: 433px;
-        max-height: 433px;
+        min-height: 520px;
+        max-height: 520px;
         left: 375px;
         top: 1229px;
         border-radius: 5px;
