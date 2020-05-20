@@ -15,16 +15,34 @@ import { getProjeto } from '../../funcoes/index'
 
 import './styles.css'
 const InformacoesProjeto = ({match,history}) => {
-    const [trabalhos,setProjetos] = useState([])
-    const [informacoes,setInfor] = useState({});
-    useEffect(()=>{
-        async function buscaFotos(){
-          const projeto = await getProjeto(match.params.id);
-          setProjetos(projeto.images);
-          setInfor(projeto.projeto)
-        }
-        buscaFotos();
-    },[]);
+    const [trabalhos,setProjetos] = useState([{
+      id : imaget1
+    },{
+      id : imaget2
+    },{
+      id : imaget3
+    },{
+      id : imaget4
+    },{
+      id : imaget2
+    },{
+      id : imaget1
+    },{
+      id : imaget4
+    }])
+    const [informacoes,setInfor] = useState({
+      titulo : 'Lorem Ipsum is simply dummy',
+      sub_titulo : 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      descricao : 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposedIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed'
+    });
+    // useEffect(()=>{
+    //     async function buscaFotos(){
+    //       const projeto = await getProjeto(match.params.id);
+    //       setProjetos(projeto.images);
+    //       setInfor(projeto.projeto)
+    //     }
+    //     buscaFotos();
+    // },[]);
 
 
     $(document).ready(function () {

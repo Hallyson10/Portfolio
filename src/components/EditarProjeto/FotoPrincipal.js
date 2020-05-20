@@ -24,7 +24,7 @@ function EditarProjeto(props) {
     />
             {foto ? <img src={preview} /> :
             <img
-                src={`http://localhost:3333/files/${props.imagePrincipal}`}
+                src={props.imagePrincipal}
             />}
         </label>
     </div>

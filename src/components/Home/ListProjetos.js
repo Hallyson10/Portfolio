@@ -21,7 +21,7 @@ function components(props) {
         {props.projetos.map((projeto)=>(
             <img key={projeto.id} onClick={()=>props.history.push(`/trabalho/${projeto.id}`)} 
             id='images' 
-            src={`http://localhost:3333/files/${projeto.imagem_principal}`} />
+            src={projeto.imagem_principal} />
         ))}
         </li>
         </ul>

@@ -31,15 +31,17 @@
     background: #979797;
     display: flex;
     border-radius: 8px;
+   
+
 }
 #image-principal-editar img{
         width: 100%;
         height: auto;
         min-height: 220px;
         max-height: 220px;
+        min-width: 400px;
         display: flex;
         border-radius: 10px;
-        object-fit: fill;
         cursor: pointer;
 }
 #image-principal-editar input{

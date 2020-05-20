@@ -6,7 +6,7 @@ function InformacoesProjeto(props) {//tension :350
   return (
         <>
         {
-            props.uri ? <img id='img-one-roll' src={`http://localhost:3333/files/${props.uri}`} alt='image-5' /> 
+            props.uri ? <img id='img-one-roll' src={props.uri} alt='image-5' /> 
             :
             null
         }

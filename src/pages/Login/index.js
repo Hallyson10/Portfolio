@@ -16,16 +16,18 @@ function Login({history}){
     async function handleSubmit(e){
         e.preventDefault();
         try {
-            const res = await api.post('/login',{
-                email : email,
-                password : senha
-            })
-            if(res.data.status){
-              localStorage.setItem('user_id',res.data.id);
-              history.replace(`/dashboard/home`);
-            }else{
-                toast.error('senha ou e-mail incorretos!')
-            }
+            // const res = await api.post('/login',{
+            //     email : email,
+            //     password : senha
+            // })
+            // if(res.data.status){
+            //   localStorage.setItem('user_id',res.data.id);
+            //   history.replace(`/dashboard/home`);
+            // }else{
+            //     toast.error('senha ou e-mail incorretos!')
+            // }
+            if(email === 'degrande@degrande.com' && senha === '12345678') history.replace(`/dashboard/home`)
+            else toast.error('senha ou e-mail incorretos!');
         } catch (error){
             toast.error('senha ou e-mail incorretos!')
         }
