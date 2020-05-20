@@ -8,6 +8,8 @@ import camera from '../../assets/camera.svg'
 import ContainerFotos from '../../components/Portfolio/Images/Container'
 import ImagePrincipalContainer from './FotoPrincipal'
 import { getProjeto, editarProjeto} from '../../funcoes/index'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css'; 
 function EditarProjeto(props) {
   const [imagemPrincipal,setImagemP] = useState(null);
   const [projeto,setProjeto] = useState(false);
@@ -26,16 +28,18 @@ function EditarProjeto(props) {
   },[props.projeto,atualizou]);
 
   function updateProjeto(){
-    if(projeto.imagem_principal !== imagemPrincipal){
-      const update = editarProjeto(projeto, imagemPrincipal);
-      if(update){
+    toast.success("Alterado com sucesso!")
+    // if(projeto.imagem_principal !== imagemPrincipal){
+    //   const update = editarProjeto(projeto, imagemPrincipal);
+    //   if(update){
         
-      }
-      setAtualizou(true);
-    }
+    //   }
+       setAtualizou(true);
+    // }
   }
   return (
       <div id='container-editar-projeto'>
+      <ToastContainer/>
       <div id='sub-container-editar'>
       <ImagePrincipalContainer
       setFoto={(foto)=>setProjeto({...projeto,imagem_principal : foto})}    

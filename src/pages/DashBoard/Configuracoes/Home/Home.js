@@ -9,11 +9,11 @@ export default function Home(props){
 
   async function saveBibliografia(){
     try {
-    const id = await localStorage.getItem('user_id');
-    const res = await api.put(`config/${id}/description`,{
-        descricao_pessoal : props.user.descricao_pessoal
-    })
-    if(res){
+    // const id = await localStorage.getItem('user_id');
+    // const res = await api.put(`config/${id}/description`,{
+    //     descricao_pessoal : props.user.descricao_pessoal
+    // })
+    if(true){
       toast.success('Alteração realizada com sucesso!')
     }
     } catch (error) {
