@@ -32,9 +32,10 @@ function Portfolio(props) {
         data_realizacao,
         arrayImages
     }
-   
-    if(imagem_principal !== null && titulo !== '' && sub_titulo !== '' && descricao !== '' && arrayImages.length >= 1){
-      if(salvarProjeto(Data)){
+    //condição pra salvar postagem
+    //if(imagem_principal !== null && titulo !== '' && sub_titulo !== '' && descricao !== '' && arrayImages.length >= 1){
+    if(imagem_principal !== null && titulo !== '' && sub_titulo !== '' && descricao !== ''){
+      //if(salvarProjeto(Data)){
         setFotoP(null);
         setImages([]);
         setTitulo('');
@@ -42,10 +43,11 @@ function Portfolio(props) {
         setData('');
         setDescricao('');
         setSalvo(true);
-        toast.success('Parabéns! publicado com sucesso.')
-      }else{
-        toast.error('Ops! ocorreu um erro inesperado.')
-      }
+        toast.success('Parabéns! publicado com sucesso.');
+     // }else{
+     // }
+    }else{        
+      toast.error('Ops! preencha os campos necessário!');
     }
   }
   return (
