@@ -406,6 +406,7 @@
         left: 375px;
         top: 1229px;
         border-radius: 5px;
+        object-fit: cover;
     }
     #img-one-roll{
         width: 68%;
@@ -420,6 +421,8 @@
         border-radius: 5px;
         display: flex;
         margin : 0 auto;
+        object-fit: cover;
+        border-radius: 10px;
     }
     #container-component-grid{
         display: flex;
