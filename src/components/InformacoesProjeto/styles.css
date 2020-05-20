@@ -341,8 +341,8 @@
         flex-direction: row;
         align-items: center;
         margin : 0 auto;
-        height: 400px;
-        max-height: 400px;
+        height: 433px;
+        max-height: 433px;
         min-width: 65%;
         max-width: 65%;
         margin-top: 20px;
@@ -412,10 +412,10 @@
         width: 68%;
         max-width: 65%;
         min-width: 65%;
-        height: 410px;
+        height: 433px;
         object-position: bottom right;
-        min-height: 410px;
-        max-height: 410px;
+        min-height: 433px;
+        max-height: 433px;
         left: 375px;
         top: 1229px;
         border-radius: 5px;
