@@ -44,6 +44,8 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    box-shadow: none;
+    border: none;
 }
 #button-option-postagem{
     min-width: 138px;
@@ -54,7 +56,9 @@
     background: #272425;
     mix-blend-mode: normal;
     border-radius: 10px;
-    color:#fff
+    color:#fff;
+    box-shadow: none;
+    border: none;
 }
 #button-option-postagem-excluir{
     min-width: 138px;
@@ -65,5 +69,7 @@
     background: #E64141;
     mix-blend-mode: normal;
     border-radius: 10px;
-    color:#fff
+    color:#fff;
+    box-shadow: none;
+    border: none;
 }
