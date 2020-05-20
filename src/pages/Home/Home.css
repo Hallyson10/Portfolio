@@ -110,7 +110,7 @@ iframe#home-container::-webkit-scrollbar {
     }
     #descricao-home-option {
         display: flex;
-        width: 80%;
+        width: 64%;
         justify-content: center;
         align-items: center;
     }
@@ -126,7 +126,7 @@ iframe#home-container::-webkit-scrollbar {
     #sub-button{
         display: flex;
         align-self: flex-start;
-        padding-left: 130px;
+        padding-left: 18%;
     }
         
 }
