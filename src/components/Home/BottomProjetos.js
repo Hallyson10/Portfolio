@@ -4,7 +4,7 @@ import whatsapp from '../../assets/whatsapp.svg'
 import facebook from '../../assets/facebook2.svg'
 import instagram from '../../assets/instagram.svg'
 import behance from '../../assets/behance.svg'
-import footer from '../../assets/footer.svg'
+import footer from '../../assets/new_logo_button.svg'
 import Icons from './Icons'
 
 export default function components() {

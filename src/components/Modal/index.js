@@ -30,7 +30,7 @@ function ComponentModal(props){
     contentLabel="Modal"
   >
     <h2 id='h2-modal'>Confirmação</h2>
-    <div>Digite sua senha anterior para confirmar</div>
+    <div>Digite sua senha atual para confirmar</div>
     <form id='form-modal'>
       <input 
       id='input-modal'

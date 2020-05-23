@@ -11,7 +11,9 @@ import imaget4 from '../../assets/imaget4.jpg'
 import ButtonSubir from '../../assets/buttonSubir.svg'
 import buttonVoltar from '../../assets/voltar.svg'
 import $ from 'jquery';
+import ButtonProjetos from '../../components/Home/BottomProjetos'
 import { getProjeto } from '../../funcoes/index'
+import {Link} from "react-router-dom"
 
 import './styles.css'
 const InformacoesProjeto = ({match,history}) => {
@@ -44,7 +46,6 @@ const InformacoesProjeto = ({match,history}) => {
     //     buscaFotos();
     // },[]);
 
-
     $(document).ready(function () {
       $("#myBtn2").css("display", "auto");
     $("div").scroll(function() {
@@ -59,13 +60,13 @@ const InformacoesProjeto = ({match,history}) => {
   return (
   <div id='container-trabalho'>
    <img id='myBtn2' onClick={subir} src={ButtonSubir} alt='buttonSubir'/>
-   <img onClick={()=>history.goBack()} id='myBtnV' src={buttonVoltar} alt='voltar' />
+   <img  id='myBtnV' onClick={()=>history.goBack()} src={buttonVoltar} alt='voltar' />
       <TopoLogo/>
         <img id='image-topo-trabalho' src={imageTopoTrabalho} alt='image-topo' />
         <img id='image_topo_trab_mobile' src={image_topo_mobile} alt='image-top-mob'/>
     <Title informacoes={informacoes} />
     <RollGrid trabalhos={trabalhos} size={trabalhos.length}/>
-    
+    <ButtonProjetos/>
   </div>
   )
 }

@@ -49,13 +49,11 @@ function Drawer(props) {
         src={portfolioAtivo} 
         title='' 
         atived
-       // onClick={()=>props.setTela(telas.PORTFOLIO)}
      />
      </Link>
      :
      <Link to={`/dashboard/${telas.PORTFOLIO}`}>
      <ButtonDash 
-        //onClick={()=>props.setTela(telas.PORTFOLIO)}
         src={portfolio} title='' />
     </Link>
      }

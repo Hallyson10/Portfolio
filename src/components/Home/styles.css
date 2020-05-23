@@ -33,11 +33,15 @@
   min-height: 100px;
   height: 100px;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 38px;
+  justify-content: space-between;
+  padding-left: 8%;
   padding-right: 80px;
   background: #f2f2f2;
   align-items: center;
+}
+#footer{
+  height: 22px;
+  margin-top: 4px;
 }
   
   #teste{
@@ -72,10 +76,6 @@
     margin-right: 4px;
     cursor: pointer;
 
-  }
-  #footer {
-      height: 48px;
-      margin-top: -22px;
   }
   #descricao-home {
     margin : 0 auto;
@@ -112,6 +112,14 @@
   background: none;
   margin-top: 12px;
 }
+#button-ativa-des{
+  height: 27.6px;
+  width: 27.6px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
 
 /*tamanho mobile*/
 @media screen and (max-width: 600px){
@@ -253,10 +261,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50%;
     padding-right: 17%;
     margin-top: 20px;
+    padding-left: 17.4%;
     margin: 0 auto;
+  }
+  #footer{
+    height: 20px;
+    margin-top: 4px;
   }
   #list-images-projetos{
     max-width: 65%;
@@ -265,16 +277,6 @@
     min-height: 100vh;
     margin-top: 50px;
     margin-bottom: 100px;
-
-    /* justify-content: center;
-    text-align: center;
-    list-style: none;
-    width: 81%;
-    margin : 0 auto;
-    margin-top: 30px;
-    min-height: 90%;
-    margin-bottom: 100px;
-    min-height: 100vh; */
   }
   #list-images-projetos li{
     display: grid;
@@ -294,13 +296,6 @@
     top: 589.04px;
     border-radius: 8px;
     cursor: pointer;
-    /* max-width:100%;
-    max-height:230px;
-    min-height: 230px;
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    cursor: pointer; */
   }
   #list-images-projetos h3{
       text-align: start;
@@ -317,6 +312,7 @@
     height: 120px;
     max-height: 80%;
     margin-bottom: 20px;
+    margin-top: 30px;
   }
   #sub-descricao {
     display: flex;
@@ -355,6 +351,10 @@
     color: #939496;
     margin-left : 18%;
     display: flex;
+  }
+  #title-img{
+    height: auto;
+    max-height: 60px;
   }
   
 }
@@ -398,6 +398,10 @@
     padding-right: 10%;
     margin-top: 20px;
   }
+  #footer{
+    height: 20px;
+    margin-top: 4px;
+  }
   #descricao-home {
     margin : 0 auto;
     padding-top: 20px;
@@ -434,9 +438,3 @@
   
 }
 
-#button-ativa-des{
-  height: 28px;
-  width: 28px;
-  border-radius: 20px;
-  cursor: pointer;
-}

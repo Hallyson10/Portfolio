@@ -41,7 +41,7 @@ function Login({history}){
              
              <div className="central-form">
              <div className="name-form">
-             <h1>Olá Diego</h1>
+             <h1>Olá Di Grandi</h1>
                 <h2>Faça login para continuar</h2>
              </div>
              <label>Email</label>
