@@ -12,7 +12,7 @@ export function isAuth(){
 async function saveImages(projeto_id,imagem){
     const formDataImage = new FormData();
     formDataImage.append('imagem_projeto',imagem);
-    await api.post(`/config/projeto/${projeto_id}/images`,formDataImage);
+    //await api.post(`/config/projeto/${projeto_id}/images`,formDataImage);
 }
 export async function salvarProjeto(data){
     try {
