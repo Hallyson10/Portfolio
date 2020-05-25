@@ -2,6 +2,12 @@ import api from '../service'
 export function Logout(){
     localStorage.removeItem('user_id');
 }
+export function isAuth(){
+    if(localStorage.getItem('user_id')){
+        return true;
+    }
+    return true;
+}
 
 async function saveImages(projeto_id,imagem){
     const formDataImage = new FormData();
