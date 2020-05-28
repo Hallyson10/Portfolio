@@ -10,10 +10,12 @@ import imaget3 from '../../assets/imaget3.jpg'
 import imaget4 from '../../assets/imaget4.jpg'
 import ButtonSubir from '../../assets/buttonSubir.svg'
 import buttonVoltar from '../../assets/voltar.svg'
+import buttonProx from '../../assets/button_inform_prox.svg'
+import buttonHome from '../../assets/button_inform_home.svg'
 import $ from 'jquery';
 import ButtonProjetos from '../../components/Home/BottomProjetos'
 import { getProjeto } from '../../funcoes/index'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import './styles.css'
 const InformacoesProjeto = ({match,history}) => {
@@ -48,9 +50,18 @@ const InformacoesProjeto = ({match,history}) => {
 
     $(document).ready(function () {
       $("#myBtn2").css("display", "auto");
+      
     $("div").scroll(function() {
-        if($(this).scrollTop() == 0 || $(this).scrollTop() <= 100 ){
-        } else if($(this).scrollTop() >= 0 ){
+        if($(this).scrollTop() <= 5  ){
+          $("#myBtn2").css("display", "none");
+          $("#myBtnH").css("display", "block");
+          $("#myBtnV").css("display", "block");
+          $("#myBtnP").css("display", "block");
+        } else if($(this).scrollTop() >= 5 ){
+          $("#myBtn2").css("display", "block");
+          $("#myBtnH").css("display", "none");
+          $("#myBtnV").css("display", "none");
+          $("#myBtnP").css("display", "none");
         }
       });
     });
@@ -60,7 +71,9 @@ const InformacoesProjeto = ({match,history}) => {
   return (
   <div id='container-trabalho'>
    <img id='myBtn2' onClick={subir} src={ButtonSubir} alt='buttonSubir'/>
+   <img  id='myBtnH' onClick={()=>history.goBack()} src={buttonHome} alt='home' />
    <img  id='myBtnV' onClick={()=>history.goBack()} src={buttonVoltar} alt='voltar' />
+   <img  id='myBtnP' onClick={()=>history.goBack()} src={buttonProx} alt='próximo' />
       <TopoLogo/>
         <img id='image-topo-trabalho' src={imageTopoTrabalho} alt='image-topo' />
         <img id='image_topo_trab_mobile' src={image_topo_mobile} alt='image-top-mob'/>
